@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro"
+const pageTitle = "All about Me";
+
+const identity = {
+  firstName: "Sarah",
+  country: "Canada",
+  occupation: "Technical Writer",
+  hobbies: ["photography", "birdwatching", "baseball"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+
+const skillColour = "green";
+---
+<Layout title={pageTitle}>
+	<style define:vars={{skillColour}}>
+	h1 {
+		color: #ff0000;
+		font-size: 4em;
+	}
+	.skills {
+		color: var(--skillColour);
+	}
+	</style>
+    <h2>... and my new Astro site!</h2>
+
+    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+
+    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+
+	<p>My skills are:	</p>
+	<ul class="skills">
+		{skills.map((skill) => (
+			<li>{skill}</li>
+		))}
+	</ul>
+</Layout>
