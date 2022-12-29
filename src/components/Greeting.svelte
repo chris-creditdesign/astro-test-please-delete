@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { SimpleButton } from "nature-immersive-svelte-components";
   export let messages = ["test"];
 
   let mounted = false;
@@ -14,8 +15,11 @@
   });
 </script>
 
-<h3>Hello {randomMessage}!</h3>
+<h3>{randomMessage}!</h3>
 
 {#if mounted}
-  <button on:click={() => getRandomMessage()}>Change message</button>
+  <SimpleButton
+    message="Click to change greeting"
+    on:click={() => getRandomMessage()}
+  />
 {/if}
