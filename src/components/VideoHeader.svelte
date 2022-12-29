@@ -4,7 +4,7 @@
 
 <header>
   <CoverBackgroundVideo
-    srcURL="/video/creditdesign-intro-small.jpg"
+    srcURL="/astro-test-please-delete/video/creditdesign-intro-small.jpg"
     alt="Video montage showing clips of interactive graphics built by Chris Ryan."
     coverHeight="40vh"
   >
