@@ -1,3 +1,38 @@
+/* Add the Harding font */
+@charset "UTF-8";
+@font-face {
+    font-family: "Harding";
+    src: url(astro-test-please-delete/fonts/HardingText-Regular-Web.woff2) format("woff2"),
+	url(/astro-test-please-delet/fonts/HardingText-Regular-Web.woff) format("woff");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Harding";
+    src: url(astro-test-please-delete/fonts/HardingText-Bold-Web.woff2) format("woff2"),
+	url(astro-test-please-delete/fonts/HardingText-Bold-Web.woff) format("woff");
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Harding";
+    src: url(astro-test-please-delete/fonts/HardingText-RegularItalic-Web.woff2)
+	format("woff2"),
+	url(astro-test-please-delete/fonts/HardingText-RegularItalic-Web.woff) format("woff");
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Harding";
+    src: url(astro-test-please-delete/fonts/HardingText-BoldItalic-Web.woff2) format("woff2"),
+	url(astro-test-please-delete/fonts/HardingText-BoldItalic-Web.woff) format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic;
+}
+
 html {
   background-color: #f1f5f9;
   font-family: sans-serif;
